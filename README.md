@@ -39,10 +39,11 @@ Ensure you have the following dependencies installed:
 
 
 # NOTES
-- Also for this third and last problem, Colab gave me some challenges: it wouldn't giving me access to A100s because they were unavailable, and gave me access to V100. So I had to opt for a even smaller model (GPT2). I wanted to use Meditron 7B but it was bigger then the memory of the V100 (16G)
-- At this point, the second problem was that Colab dependencies were having problem with both Chroma, and chromadb libraries, resulting in 'Chroma is not installed' despite being
-- I then opted to download the Quantized version of MediTron 7B (.gguf file available at https://huggingface.co/TheBloke/meditron-7B-GGUF/tree/main) so that I could run it on my local CPU. I chose meditron since the heavier version (70B) has recently showed similar performances to PaLM2.
-### Things to do if I had more time
+- Colab gave me some challenges: it wouldn't giving me access to A100s because they were unavailable, and gave me access to V100. So I had to opt for a even smaller model (GPT2). I wanted to use Meditron 7B but it was bigger then the memory of the V100 (16G)
+- The second problem was that Colab dependencies were having problem with both Chroma, and chromadb libraries, resulting in 'Chroma is not installed' despite being
+- I then opted to download the Quantized version of MediTron 7B (.gguf file available at https://huggingface.co/TheBloke/meditron-7B-GGUF/tree/main) so that I could run it on my local CPU. I chose meditron since the heavier version (70B) has recently showed similar performances to PaLM2, which is trained for medical application.
+
+### Things that will be done to improve:
 - RAG that could read the tables. Usually RAG suffers from that. So I would find a way to show relative tables
 - marella (creator of langchain) suggests the used configs of CTransformers. I would to go deeper and play with those, to see which is better and why
 - I would extract the context form the summary and put it automatically into the prompt, to make the retrieval among differnt documents faster
