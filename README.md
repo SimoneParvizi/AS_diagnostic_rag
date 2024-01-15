@@ -2,6 +2,9 @@
 
 This repository contains a Python script for analyzing medical documents and retrieving information using advanced NLP techniques. The script leverages several components from the LangChain library, including text splitting, embeddings, and retrieval-based question answering.
 
+![Medical Documentation RAG](https://github.com/SimoneParvizi/Medical-Information-retrieval-with-RAG/assets/75120707/3c5566ee-0e63-41e8-bfee-2c356d2ff89d)
+
+
 ## Features
 
 1. **Text Processing**: Utilizes `RecursiveCharacterTextSplitter` for efficient text splitting.
